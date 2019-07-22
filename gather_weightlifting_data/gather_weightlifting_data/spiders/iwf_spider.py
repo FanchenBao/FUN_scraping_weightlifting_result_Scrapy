@@ -6,7 +6,11 @@ import scrapy
 
 
 class IWFSpider(scrapy.Spider):
+    """ A scrapy spider to pull down all meet results available on iwf official websites. As of 07/21/2019, the oldest
+        meet result is from 1998.
+    """
     name = "iwf"
+    # note new and old body weight has separate urls.
     start_urls = [
         'https://www.iwf.net/new_bw/results_by_events/?event_year=2018',
         'https://www.iwf.net/results/results-by-events/?event_year=1998'
@@ -42,7 +46,7 @@ class IWFSpider(scrapy.Spider):
                           'category', 'bweight', 'snatch1', 'snatch2', 'snatch3', 'snatch',
                           'jerk1', 'jerk2', 'jerk3', 'jerk', 'total', 'event', 'date']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames, extrasaction='ignore')
-            if no_header:
+            if no_header:  # only add header once
                 writer.writeheader()
             for d in data:
                 writer.writerow(d)
