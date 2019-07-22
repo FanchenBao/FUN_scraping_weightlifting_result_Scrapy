@@ -1,0 +1,11 @@
+# ignore virtualenv
+venv/
+
+# ignore PyCharm config
+.idea/
+
+# ignore cache
+__pycache__/
+
+# ignore csv
+*.csv
