@@ -9,3 +9,7 @@ __pycache__/
 
 # ignore csv
 *.csv
+
+# ignore file
+.DS_Store
+*/.DS_Store
