@@ -9,6 +9,7 @@ Building of this probject followed the [Scrapy tutorial](https://docs.scrapy.org
 ## Usage
 * Clone the repository
 * `cd FUN_scraping_weightlifting_result_Scrapy`
+* Set up virtual environment
 * `pip install -r requirements.txt`
 * `cd gather_weightlifting_data`
 * `scrapy crawl iwf`
