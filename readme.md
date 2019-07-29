@@ -8,7 +8,8 @@ Building of this probject followed the [Scrapy tutorial](https://docs.scrapy.org
 
 ## Usage
 * Clone the repository
+* `cd FUN_scraping_weightlifting_result_Scrapy`
 * `pip install -r requirements.txt`
-* `cd FUN_scraping_weightlifting_result_Scrapy/gather_weightlifting_data`
+* `cd gather_weightlifting_data`
 * `scrapy crawl iwf`
 * A file `all_data.csv` will be generated, containing all weightlifting meet results from 1998 till present.
